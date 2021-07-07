@@ -2,10 +2,8 @@ import React from 'react';
 import './App.css';
 import  Header  from "./components/Header/header";
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import { AboutMe } from "../src/components/AboutMe.tsx/aboutMe";
 import { Experience} from "../src/components/Experience/experience";

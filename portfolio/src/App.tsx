@@ -1,12 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import  Header  from "../src/components/header";
+import  Header  from "./components/Header/header";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { AboutMe } from "../src/components/AboutMe.tsx/aboutMe";
+import { Experience} from "../src/components/Experience/experience";
+import { Contact } from "../src/components/Contact/contact";
+import { Education } from "../src/components/Education/education";
+import { Projects } from "../src/components/Projects/projects";
+import { Footer } from "../src/components/Footer/footer"
 
 function App() {
   return (
     <div className="App">
       <Header/>
+      <Switch>
+        <Route path="/about">
+          <AboutMe/>
+        </Route>
+        <Route path="/experience">
+          <Experience/>
+        </Route>
+        <Route path="/contact">
+          <Contact/>
+        </Route>
+        <Route path="/education">
+          <Education/>
+        </Route>
+        <Route path="/projects">
+          <Projects/>
+        </Route>
+      </Switch>
+      <Footer/>
     </div>
   );
 }

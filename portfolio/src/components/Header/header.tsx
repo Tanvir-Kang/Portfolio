@@ -5,6 +5,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { useHistory } from 'react-router';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -47,6 +48,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 export default function SimpleTabs() {
+  const history = useHistory();
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -57,28 +59,28 @@ export default function SimpleTabs() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Tabs value={value} onChange={handleChange}>
-          <Tab label="About Me" {...a11yProps(0)} />
-          <Tab label="Experience" {...a11yProps(1)} />
-          <Tab label="Education" {...a11yProps(2)} />
-          <Tab label="Projects" {...a11yProps(3)} />
-          <Tab label="Contact Me" {...a11yProps(4)}/>
+        <Tabs value={value} onChange={handleChange} >
+          <Tab label="About Me" onClick={() => history.push("/about")} {...a11yProps(0)} />
+          <Tab label="Experience" onClick={() => history.push("/experience")} {...a11yProps(1)} />
+          <Tab label="Education" onClick={() => history.push("/education")} {...a11yProps(2)} />
+          <Tab label="Projects" onClick={() => history.push("/projects")} {...a11yProps(3)} />
+          <Tab label="Contact Me" onClick={() => history.push("/contact")} {...a11yProps(4)}/>
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Item One
+
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
+
       </TabPanel>
     </div>
   );

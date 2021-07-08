@@ -60,7 +60,7 @@ export default function SimpleTabs() {
     <div className={classes.root}>
       <AppBar position="static">
         <Tabs value={value} onChange={handleChange} >
-          <Tab label="About Me" onClick={() => history.push("/about")} {...a11yProps(0)} />
+          <Tab label="About Me" onClick={() => history.push("/")} {...a11yProps(0)} />
           <Tab label="Experience" onClick={() => history.push("/experience")} {...a11yProps(1)} />
           <Tab label="Education" onClick={() => history.push("/education")} {...a11yProps(2)} />
           <Tab label="Projects" onClick={() => history.push("/projects")} {...a11yProps(3)} />

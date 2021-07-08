@@ -1,21 +1,7 @@
-import { Typography, Container, useTheme } from "@material-ui/core"
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import OutlinedCard from "../Card/cards";
+import { Typography } from "@material-ui/core"
+import { OutlinedCard } from "../Card/cards";
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        root: {
-            flexGrow: 1,
-        },
-        paper: {
-            padding: theme.spacing(2),
-            textAlign: 'center',
-            color: theme.palette.text.secondary,
-        },
-    }),
-);
+import { useStyles } from "../Card/cardStyles";
 
 export const AboutMe = () => {
     const classes = useStyles();
@@ -30,7 +16,7 @@ export const AboutMe = () => {
                     </Grid>
                     
                     <Grid item xs={12} sm={10} md={8} lg={4} xl={4}>
-                        <OutlinedCard/>
+                        <OutlinedCard />
                     </Grid>
 
                 </Grid>

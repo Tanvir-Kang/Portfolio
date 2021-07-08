@@ -16,8 +16,8 @@ export const OutlinedCard = (props: CardProps) => {
         <Card className={classes.root} variant="outlined">
             <CardMedia
                 className={classes.media}
-                image="/static/images/cards/paella.jpg"
-                title="Paella dish"
+                image={props.image}
+                title={props.title}
             />
         </Card>
     );

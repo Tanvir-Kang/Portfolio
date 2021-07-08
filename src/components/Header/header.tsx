@@ -67,21 +67,11 @@ export default function SimpleTabs() {
           <Tab label="Contact Me" onClick={() => history.push("/contact")} {...a11yProps(4)}/>
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
-
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-
-      </TabPanel>
+      <TabPanel value={value} index={0}/>
+      <TabPanel value={value} index={1}/>
+      <TabPanel value={value} index={2}/>
+      <TabPanel value={value} index={3}/>
+      <TabPanel value={value} index={4}/>
     </div>
   );
 }

@@ -18,7 +18,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
           className={classes.media}
           image={props.imageURL? props.imageURL : undefined}
           title={props.imageTitle}
-        />
+          />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">{props.textTitle}</Typography>
           <Typography className={classes.pos} color="textSecondary">{props.subTitles ? props.subTitles : null}</Typography>
@@ -28,6 +28,9 @@ export const ProjectCard = (props: ProjectCardProps) => {
       </CardActionArea>
       <CardActions>
         <a href={props.GitHubURL}><Button size="small" color="primary">GitHub</Button></a>
+        {props.videoURL? 
+        <a href={props.videoURL}><Button size="small" color="primary">YouTube</Button></a> 
+        : null}
       </CardActions>
     </Card>
   );

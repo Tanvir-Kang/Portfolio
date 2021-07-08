@@ -5,4 +5,5 @@ export interface ProjectCardProps {
     subTitles: string;
     textDescription: string;
     GitHubURL?: string;
+    videoURL?: string;
 }

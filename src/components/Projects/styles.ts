@@ -15,6 +15,5 @@ export const useStyles = makeStyles({
   },
   gridItem: {
       maxWidth: "100%",
-      padding: '1em'
   }
 });

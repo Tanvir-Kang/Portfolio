@@ -4,4 +4,5 @@ export interface ProjectCardProps {
     textTitle: string;
     subTitles: string;
     textDescription: string;
+    GitHubURL?: string;
 }

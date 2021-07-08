@@ -1,4 +1,5 @@
-export interface CardProps {
-    image?: string;
-    title?: string;
+export interface TextCardProps {
+    titleText: string;
+    secondaryText?: string;
+    bodyText: string;
 }

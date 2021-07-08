@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export const useStyles = makeStyles({
     root: {
       minWidth: 275,
+      alignContent: "left+"
     },
     bullet: {
       display: 'inline-block',
@@ -14,10 +15,6 @@ export const useStyles = makeStyles({
     },
     pos: {
       marginBottom: 12,
-    },
-    media: {
-      height: 0,
-      paddingTop: '100%', // 16:9
     },
     gridUpperPadding: {
       paddingTop: '2em'

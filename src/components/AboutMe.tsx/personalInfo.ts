@@ -9,5 +9,5 @@ export const profilePicture : ImageCardProps = {
 export const profileDescription : TextCardProps = {
     titleText: "A little bit about me",
     bodyText: "Body",
-    secondaryText: "introduction"
+    secondaryText: "Introduction"
 }

@@ -3,7 +3,8 @@ import { OutlinedCard } from "../../components/ImageCard/cards";
 import { TextCard } from "../../components/TextCard/cards";
 import Grid from '@material-ui/core/Grid';
 import { useStyles } from "../../components/ImageCard/cardStyles";
-import { profilePicture, profileDescription } from "./personalInfo";
+import { profilePicture, profileDescription, PrimaryLanguages } from "./personalInfo";
+import { LanguageCard } from "../../components/LanguageCards/languageCard";
 
 export const AboutMe = () => {
     const classes = useStyles();
@@ -26,6 +27,14 @@ export const AboutMe = () => {
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                         <Typography className={classes.whiteText} variant='h4' >My main skills are</Typography>
                     </Grid>
+                    {PrimaryLanguages.map((language) => {
+                        return (
+                            <Grid item xs={12} sm={6} md={6} lg={3} xl={3}>
+                                <LanguageCard {...language} />
+                            </Grid>
+                        );
+                    })}
+
                 </Grid>
 
 

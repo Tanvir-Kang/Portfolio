@@ -109,7 +109,6 @@ export default function SimpleTabs() {
         <>
           <AppBar position="static">
             <Tabs value={value} onChange={handleChange} >
-              <Tab label="About Me" onClick={() => history.push("/")} {...a11yProps(0)} />
               {HeaderRoutes.map((page) => {
                 return (<Tab label={page.tabName} onClick={() => history.push(page.route)} {...a11yProps(0)}/>);
               })}

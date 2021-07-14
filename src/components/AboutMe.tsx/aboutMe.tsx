@@ -12,21 +12,18 @@ export const AboutMe = () => {
         <>
             <div className={classes.root}>
                 <Grid container spacing={3} justifyContent="flex-end">
-                <Grid alignContent="flex-start" item xs={12} sm={10} md={8} lg={8} xl={8}>
+                <Grid alignContent='flex-start' item xs={12} sm={12} md={6} lg={8} xl={8}>
                         <Typography variant="h3"> Tanvir Kang </Typography>
                         <Typography variant="h6"> Software Engineer </Typography>
+                        <TextCard {...profileDescription}/>
                     </Grid>
-                    
-                    <Grid item xs={12} sm={10} md={8} lg={4} xl={4}>
+                    <Grid item xs={12} sm={12} md={6} lg={4} xl={4}>
                         <OutlinedCard {...profilePicture}/>
                     </Grid>
 
                 </Grid>
-                <Grid container spacing={3} className={classes.gridUpperPadding}>
-                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                        <TextCard {...profileDescription}/>
-                    </Grid>
-                </Grid>
+
+
             </div>
         </>
     );

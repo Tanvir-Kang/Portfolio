@@ -10,26 +10,26 @@ import { Experience} from "../src/components/Experience/experience";
 import { Contact } from "../src/components/Contact/contact";
 import { Education } from "../src/components/Education/education";
 import { Projects } from "../src/components/Projects/projects";
-import { Footer } from "../src/components/Footer/footer"
+import { ROUTES } from "../src/components/Header/routes";
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <Switch>
-        <Route exact path="/">
+        <Route exact path={ROUTES.about}>
           <AboutMe/>
         </Route>
-        <Route path="/experience">
+        <Route path={ROUTES.experience}>
           <Experience/>
         </Route>
-        <Route path="/contact">
+        <Route path={ROUTES.contactMe}>
           <Contact/>
         </Route>
-        <Route path="/education">
+        <Route path={ROUTES.education}>
           <Education/>
         </Route>
-        <Route path="/projects">
+        <Route path={ROUTES.projects}>
           <Projects/>
         </Route>
       </Switch>

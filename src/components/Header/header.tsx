@@ -84,7 +84,6 @@ export default function SimpleTabs() {
             >
               <MenuIcon />
             </IconButton>
-            <Typography>Learn More</Typography>
           </Toolbar>
           <Drawer
             open={open}

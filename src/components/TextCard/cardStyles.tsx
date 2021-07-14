@@ -4,8 +4,8 @@ export const useStyles = makeStyles({
     root: {
       minWidth: 275,
       alignContent: "start",
-      alignItems: 'start'
-
+      alignItems: 'start',
+      boxShadow: '0px 0px 0px 0px',
     },
     title: {
       fontSize: '1.5em',

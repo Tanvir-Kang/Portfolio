@@ -1,5 +1,5 @@
 import { listOfProjects } from "./personalInfo";
-import { ProjectCard } from "../ProjectCard/cards";
+import { ProjectCard } from "../../components/ProjectCard/cards";
 import Grid from '@material-ui/core/Grid';
 import { useStyles } from "./styles";
 

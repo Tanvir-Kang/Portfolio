@@ -1,5 +1,4 @@
-import { ProjectCardProps } from "../ProjectCard/cardTypes";
-import  SAMPLE_IMAGE  from "../../Static/Images/codingImage.jpg";
+import { ProjectCardProps } from "../../components/ProjectCard/cardTypes";
 import { ProjectImages } from "../../Static/Images/index";
 
 const UnityProject: ProjectCardProps = {

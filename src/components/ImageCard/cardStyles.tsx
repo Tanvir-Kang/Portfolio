@@ -3,11 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export const useStyles = makeStyles({
     root: {
       minWidth: 275,
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
+      boxShadow: '0px 0px 0px 0px',
     },
     title: {
       fontSize: 14,
@@ -18,8 +14,19 @@ export const useStyles = makeStyles({
     media: {
       height: 0,
       paddingTop: '100%', // 16:9
+      borderRadius: '50em',
     },
     gridUpperPadding: {
-      paddingTop: '2em'
-    }
+      paddingTop: '2em',
+    },
+    blackBackground: {
+      backgroundColor: '#30343F',
+      minWidth: '100px',
+      minHeight: '100px',
+    },
+    whiteText: {
+      color: 'white',
+      paddingTop: '0.25em',
+      fontWeight: 'bold',
+    },
   });

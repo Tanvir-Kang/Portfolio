@@ -1,5 +1,5 @@
-import { ImageCardProps } from "../ImageCard/cardTypes";
-import { TextCardProps } from "../TextCard/cardTypes";
+import { ImageCardProps } from "../../components/ImageCard/cardTypes";
+import { TextCardProps } from "../../components/TextCard/cardTypes";
 import PROFILE_PICTURE from "../../Static/Images/IMG_2662.jpg"
  
 export const profilePicture : ImageCardProps = {

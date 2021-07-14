@@ -5,11 +5,11 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { AboutMe } from "../src/components/AboutMe.tsx/aboutMe";
-import { Experience} from "../src/components/Experience/experience";
-import { Contact } from "../src/components/Contact/contact";
-import { Education } from "../src/components/Education/education";
-import { Projects } from "../src/components/Projects/projects";
+import { AboutMe } from "./pages/AboutMe.tsx/aboutMe";
+import { Experience} from "./pages/Experience/experience";
+import { Contact } from "./pages/Contact/contact";
+import { Education } from "./pages/Education/education";
+import { Projects } from "./pages/Projects/projects";
 import { ROUTES } from "../src/components/Header/routes";
 
 function App() {

@@ -9,7 +9,7 @@ import { LanguageCardType } from './landCardTypes';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      minWidth: '100px',
+      maxWidth: 200,
     },
     media: {
       height: 0,

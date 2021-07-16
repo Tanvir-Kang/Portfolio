@@ -23,6 +23,7 @@ export const useStyles = makeStyles({
       backgroundColor: '#30343F',
       minWidth: '100px',
       minHeight: '100px',
+      justifyContent: 'center',
     },
     whiteText: {
       color: 'white',

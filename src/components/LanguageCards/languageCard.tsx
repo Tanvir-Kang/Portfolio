@@ -8,13 +8,18 @@ import { LanguageCardType } from './landCardTypes';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      maxWidth: 200,
+    NOMARGIN: {
+      margin: '1em',
+      padding: '0.5em',
+      justifyContent: 'center'
     },
     media: {
-      height: 0,
-      paddingTop: '100%',
-    },
+      minHeight: '50px',
+      paddingTop: '56.25%',
+      maxWidth: '50px',
+      margin: 0,
+      paddingLeft: '100%'
+        },
   }),
 );
 
@@ -22,12 +27,11 @@ export const LanguageCard = (props: LanguageCardType) => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.NOMARGIN}>
 
       <CardMedia
         className={classes.media}
         image={props.imageURL}
-        title="Paella dish"
       />
       <CardContent>
             <Divider/>

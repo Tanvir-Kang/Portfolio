@@ -27,9 +27,11 @@ export const AboutMe = () => {
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                         <Typography className={classes.whiteText} variant='h4' >My main skills are</Typography>
                     </Grid>
-                    {PrimaryLanguages.map((language) => {
-                        return (
-                            <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
+                    {PrimaryLanguages.map((language) => { return (
+                            <Grid item xs={4} sm={4} md={3} lg={3} xl={3} direction="column"
+                            justify="center"
+                            alignItems="center"
+                            spacing={0}>
                                 <LanguageCard {...language} />
                             </Grid>
                         );

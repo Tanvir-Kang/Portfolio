@@ -24,10 +24,23 @@ export const useStyles = makeStyles({
       minWidth: '100px',
       minHeight: '100px',
       justifyContent: 'center',
+      marginTop: "2em",
+      paddingBottom: "1em"
     },
     whiteText: {
       color: 'white',
       paddingTop: '0.25em',
       fontWeight: 'bold',
     },
+    whiteBackground: {
+      backgroundColor: '#EEEEEE',
+      minWidth: '100px',
+      minHeight: '100px',
+      justifyContent: 'center',
+    },
+    charcoal: {
+      color: '#30343F',
+      paddingTop: '0.25em',
+      fontWeight: 'bold',
+    }
   });

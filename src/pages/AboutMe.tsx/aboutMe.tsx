@@ -51,8 +51,6 @@ export const AboutMe = () => {
                         );
                     })}
                 </Grid>
-
-
             </div>
         </>
     );

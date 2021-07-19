@@ -19,7 +19,10 @@ const useStyles = makeStyles((theme: Theme) =>
       maxWidth: '50px',
       margin: 0,
       paddingLeft: '100%'
-        },
+    },
+    languageName: {
+      fontWeight: 'bold',
+    }
   }),
 );
 
@@ -34,9 +37,8 @@ export const LanguageCard = (props: LanguageCardType) => {
         image={props.imageURL}
       />
       <CardContent>
-            <Divider/>
-            <Typography variant="body2" color="textSecondary" component="p">
-            {props.cardTitle}
+        <Typography className={classes.languageName} component="p">
+          {props.cardTitle}
         </Typography>
       </CardContent>
     </Card>

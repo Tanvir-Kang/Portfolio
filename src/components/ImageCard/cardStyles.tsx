@@ -15,6 +15,7 @@ export const useStyles = makeStyles({
       height: 0,
       paddingTop: '100%', // 16:9
       borderRadius: '50em',
+      margin: '1em'
     },
     gridUpperPadding: {
       paddingTop: '2em',

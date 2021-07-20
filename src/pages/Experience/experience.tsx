@@ -22,16 +22,17 @@ export const Experience = () => {
                 </Grid>
             </Grid>
 
-            <Grid container xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Grid direction='column' container alignContent='flex-start' xs={12} sm={12} md={12} lg={12} xl={12}>
                 <Grid item>
                     <Typography>{personalInfo.headingOne}</Typography>
-                    </Grid>
-                    <Grid item>
+                    <Typography></Typography>
+                </Grid>
+                <Grid item>
                     <Typography>{personalInfo.headingTwo}</Typography>
-                    </Grid>
-                    <Grid item>
+                </Grid>
+                <Grid item>
                     <Typography>{personalInfo.headingThree}</Typography>
-                    </Grid>
+                </Grid>
             </Grid>
         </>
 

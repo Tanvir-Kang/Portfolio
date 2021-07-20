@@ -6,7 +6,8 @@ export const useStyles = makeStyles({
     },
     titleTypography: {
         marginLeft: '2em',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontSize: '2em'
     },
     media: {
         height: 100,

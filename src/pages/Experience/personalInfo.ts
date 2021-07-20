@@ -1,8 +1,10 @@
 export const personalInfo = {
-    headingOne: "First Month",
+    Introduction: "My role at RFG can be split into three sets of responsibilities. I wore many hats, beared \
+    a variety of different responsiblities which led me carving a unique 'full-stack' role.",
+    headingOne: "Front-End",
     DescriptionOne: "",
-    headingTwo: "Months Two - Six",
+    headingTwo: "Back-End",
     DescriptionTwo: "",
-    headingThree: "Month Seven to Eleven",
+    headingThree: "QA",
     DescriptionThree: "",
 }

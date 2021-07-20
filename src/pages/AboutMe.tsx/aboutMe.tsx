@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { useStyles } from "../../components/ImageCard/cardStyles";
 import { profilePicture, profileDescription, PrimaryLanguages, SecondaryLanguage } from "./personalInfo";
 import { LanguageCard } from "../../components/LanguageCards/languageCard";
+import { TitlebarImageList } from "../../components/ImageList/imageList";
 
 export const AboutMe = () => {
     const classes = useStyles();
@@ -58,7 +59,7 @@ export const AboutMe = () => {
                         <Typography className={classes.whiteText} variant='h4' >My Hobbies</Typography>
                         </Grid>
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <Typography>IMAGE LIST</Typography>
+                        <TitlebarImageList/>
                         </Grid>
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}></Grid>
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}></Grid>

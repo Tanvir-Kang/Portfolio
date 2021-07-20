@@ -12,7 +12,7 @@ export const profileDescription: TextCardProps = {
     titleText: "A little bit about me...",
     secondaryText: "I'm currently looking for a role which would allow me to build on my existing skills while providing the room to learn \
     new languages, frameworks, and the land of DevOps. I have an interest in both frontend and backend developement but would like to \
-    continue to grow my knowledge of best practices, architecture, and creating effecient software.",
+    continue to grow my knowledge of best practices, architecture, and creating efficient software.",
     bodyText: "Hello! I'm Tanvir, a junior level software developer based in Vancouver, BC. I'm a determined individual with a lot to learn about programming.\
     My defining characteristics are an ability to put away my ego when working with others, gritty when problems get tough, a very keen eye for details \
     and most importantly I try to learn something new everyday.",

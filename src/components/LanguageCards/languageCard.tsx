@@ -11,11 +11,15 @@ const useStyles = makeStyles((theme: Theme) =>
     NOMARGIN: {
       margin: '1em',
       padding: '0.5em',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      '&:hover': {
+        backgroundColor: '#ffffff',
+        boxShadow: 'none',
+      }
     },
     media: {
       minHeight: '50px',
-      paddingTop: '50%',
+      paddingTop: '70%',
       maxWidth: '50px',
       margin: 0,
       paddingLeft: '100%'

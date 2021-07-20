@@ -43,5 +43,12 @@ export const useStyles = makeStyles({
       color: '#30343F',
       paddingTop: '0.25em',
       fontWeight: 'bold',
-    }
+    },
+    blackBackground2: {
+      backgroundColor: '#30343F',
+      minWidth: '100px',
+      minHeight: '100px',
+      justifyContent: 'center',
+      paddingBottom: "1em"
+    },
   });

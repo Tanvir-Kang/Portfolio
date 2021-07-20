@@ -27,11 +27,12 @@ export const AboutMe = () => {
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                         <Typography className={classes.whiteText} variant='h4' >My main skills are</Typography>
                     </Grid>
-                    {PrimaryLanguages.map((language) => { return (
+                    {PrimaryLanguages.map((language) => {
+                        return (
                             <Grid item xs={4} sm={4} md={3} lg={3} xl={3} direction="column"
-                            justify="center"
-                            alignItems="center"
-                            spacing={0}>
+                                justify="center"
+                                alignItems="center"
+                                spacing={0}>
                                 <LanguageCard {...language} />
                             </Grid>
                         );
@@ -41,15 +42,29 @@ export const AboutMe = () => {
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                         <Typography className={classes.charcoal} variant='h4' >I also have experience with</Typography>
                     </Grid>
-                    {SecondaryLanguage.map((language) => { return (
+                    {SecondaryLanguage.map((language) => {
+                        return (
                             <Grid item xs={4} sm={4} md={3} lg={2} xl={2} direction="column"
-                            justify="center"
-                            alignItems="center"
-                            spacing={0}>
+                                justify="center"
+                                alignItems="center"
+                                spacing={0}>
                                 <LanguageCard {...language} />
                             </Grid>
                         );
                     })}
+                </Grid>
+                <Grid container className={classes.blackBackground2}>
+                    <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                        <Typography className={classes.whiteText} variant='h4' >My Hobbies</Typography>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                            <Typography>IMAGE LIST</Typography>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}></Grid>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}></Grid>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}></Grid>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}></Grid>
+
                 </Grid>
             </div>
         </>

@@ -7,12 +7,13 @@ import RFG from "./RFG.jpg";
 import Mustang from "./Mustang.png";
 import Mountains from "./Mountains.png";
 import PC from "./PC.png";
-//import BMW from "./src/Static/Images/BMW.JPG";
+import BMW from "./BMW.png";
 import Hiking from "./Hiking.png"
-//import Skiing from "./Skiing.jpg"
-const photo = require('./BMW.JPG');
+import Skiing from "./Skiing.png"
+
+
 export const ProjectImages = {MultiThreadedRequest, LeetCode, BinkBoxing, Lental, BlueWhaleDetail};
 
 export const experienceImage = { RFG };
 
-export const Hobbies = { Mustang, Mountains, PC, Hiking};
+export const Hobbies = { Mustang, Mountains, PC, Hiking, BMW, Skiing};

@@ -51,4 +51,9 @@ export const useStyles = makeStyles({
       justifyContent: 'center',
       paddingBottom: "1em"
     },
+    padding: {
+      marginLeft: '1em',
+      marginRight: '1em',
+      marginTop: '1em'
+    }
   });
